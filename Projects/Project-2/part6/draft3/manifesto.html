@@ -14,9 +14,23 @@ body{
     background-color: white;
     background-image: none;
 }
-#rotate{
-    transform: rotate(45deg); /* Equal to rotateZ(45deg) */
   
+
+#square{
+    width: 700px;
+    height: 700px;
+    background-image: radial-gradient(at 50% 42%, hsla(28,64%,82%,1) 0, transparent 68%),  
+        radial-gradient(at 80% 0%, hsla(110,77%,41%,1) 0, transparent 50%),  
+        radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
+        radial-gradient(at 55% 61%, hsla(340,100%,76%,1) 0, transparent 50%),  
+        radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
+        radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+    position: relative;
+    bottom: 1750px;
+    left: 350px;
+
+
 }
 #record{
   width: 600px;
@@ -24,31 +38,13 @@ body{
   border-radius: 50%;
   background-color: black;
   position: relative;
-  left: 400px;
+  left: 700px;
   bottom: 1100px;
   
  
 }
-.record:hover{
-    display: none;
-
-}
 
 
-
-
-.record:hover {
-    display: none;
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
 
 </style>
 <body>
@@ -56,20 +52,7 @@ body{
         <h3>Ambient Music</h3>
       
     </p>
-    <!-- <svg viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <path id="MyPath"
-                d="M 20,30 20,20 60,20 60,30 50,30"/>
-        </defs> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="50%" heihgt="50%" viewBox="0 150 744 1052">
-            <defs>
-            <path id= "MyPath" d="m351 487c0 8-11 4-14-1-6-11 4-24 15-27 19-5 37 11 40 30 4 27-18 50-44 53-35 4-64-25-66-59-3-42 32-77 73-79 50-3 90 39 92 88 2 57-46 104-102 105-65 2-117-53-119-117-1-72 60-131 131-132 80-1 144 67 145 146 1 87-74 158-160 158-95 0-171-81-171-175 0-102 88-185 190-184 110 1 198 95 197 204C557 615 456 709 340 708 215 706 115 598 117 475 119 342 233 236 364 238 504 240 616 361 614 500 611 648 484 766 337 763 182 760 58 626 61 472 65 309 206 179 367 183c170 4 306 151 302 320-4 178-158 319-335 315"/>
-            </defs> 
-           
-
-        <use xlink:href="#MyPath" fill="none" stroke-width="0.1" stroke="black"  />
-      
-        <text font-size="10px"id= "rotate">
+   
           <textPath xlink:href="#MyPath">
             The concept of music designed specifically as a background feature in the environment was pioneered by Muzak Inc. in the fifties, and has since come carries are those particularly associated with the kind of material that Muzal Inc. produces — familiar tunes arranged and orchestrated in a lightweight and derivative manner. Understandably, this has led most discerning listeners (and most composers) to dismiss entirely the concept of environmental music as an idea worthy of attention.<br>
         Over the past three years, I have become interested in the use of music as ambience, and have come to believe that it is possible to produce material that can be used thus without being in any way compromised. To create a distinction between my own experiments in this area and the products of the various purveyors of canned music, I have begun using the term Ambient Music.<br>
@@ -83,6 +66,7 @@ body{
       
       </svg>
       <div id="record"></div> 
+      <div id="square"></div>
     
     
  </body>
