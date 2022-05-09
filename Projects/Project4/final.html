@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./final.js" tyoe="text/javascript" defer></script>
+</head>
+<style>
+    .container{
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 50px;
+
+    }
+    body, html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+}
+ .Red{
+        width: 200px;
+        height: 500px;
+        background-color: red; 
+        position:relative; 
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+ }
+    
+    #red1{
+        top: 500px;
+
+    }
+    #red2{
+        left: 400px;
+        top: px;
+        
+    }
+    #red3{
+        left: 800px;
+        bottom: 500px;
+
+    }
+    #red4{
+        left: 1200px;
+        bottom: 1000px;
+
+    }
+    .popcorn{
+        background-color: palegoldenrod;
+        border-radius: 50%;
+        
+    }
+    .White{
+        width: 200px;
+        height: 500px;
+        background-color: beige; 
+        position:relative; 
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+ }
+    #white1{
+        bottom: 1500px;
+        left: 200px;
+
+    }
+    #white2{
+        left: 600px;
+        bottom: 2000px;
+        
+    }
+
+    #white3{
+        left: 1000px;
+        bottom: 2500px;
+
+    }
+
+
+
+
+      
+        
+
+
+</style>
+<body>
+    <main>
+        <!-- Keyboard Events -->
+        <div class="container">
+            <h2>Type how you are feeling and get a movie recommendation. </h2>
+            <div class="feedback" id="keyboard-feedback"></div>
+        </div>
+        <!-- Input Events -->
+        <div class="container">
+            <h2>Type how you are feeling and get a movie recommendation!</h2>
+            <form id="input">
+                <input type="text"></input>
+                <button type="submit">Enter</button>
+            </form>
+            <div class="feedback" id="input-feedback"></div>
+
+        </div>
+    </main>
+    <div class="Red" id="red1"></div>
+    <div class="Red" id="red2"></div>
+    <div class="Red" id="red3"></div>
+    <div class="Red" id="red4"></div>
+    <div class="White" id="white1"></div>
+    <div class="White" id="white2"></div>
+    <div class="White" id="white3"></div>
+    
+
+
+    
+      
+    
+</body>
+</html>
