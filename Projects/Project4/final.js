@@ -1,28 +1,10 @@
 // Dom references
-const keybordEventElement = document.querySelector('div#keyboard')
-const keyboardFeedbackElement = document.querySelector('div#keyboard-feedback')
 const inputEventElement = document.querySelector('form#input')
 const inputElement = document.querySelector('form#input input')
 const inputFeedbackElement = document.querySelector('div#input-feedback')
-console.log(inputElement.value, inputEventElement)
+console.log(inputElement.value,)
 
 // Application Code
-
-inputEventElement.addEventListener('submit', (event) => {
-    console.log('submit')
-    // Prevent Normal Submit Event Behavior
-    event.preventDefault()
-    // Get Form Value
-    const value = inputElement.value
-        //Create a New Element
-        const feedbackElement = document.createElement('p')
-        feedbackElement.innerHTML = "Input value: " + event.key
-        //Add to Page
-        inputFeedbackElement.appendChild(feedbackElement)
- 
-
-
-})  
 
 const moviesArray = [
     {
@@ -253,6 +235,26 @@ const moviesArray = [
 
 ]
 
-const randomIndex = Math.round(Math.random() * moviesArray.length - 1)
-console.log(randomIndex)
-console.log(moviesArray[randomIndex])
+inputEventElement.addEventListener('submit', (event) => {
+    console.log('submit')
+    const randomIndex = Math.round(Math.random(55) * moviesArray.length - 1)
+    console.log(randomIndex)
+    console.log(moviesArray[randomIndex])
+    // Prevent Normal Submit Event Behavior
+    event.preventDefault()
+    // Get Form Value
+    const value = inputElement.value
+        //Create a New Element
+        const feedbackElement = document.createElement('p')
+        feedbackElement.innerHTML = "You should watch" + name + "directed by" + director 
+        //Add to Page
+        inputFeedbackElement.appendChild(feedbackElement)
+        //Clear Input
+        inputElement.value = ""
+ 
+
+
+})  
+
+
+
