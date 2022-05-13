@@ -245,8 +245,11 @@ inputEventElement.addEventListener('submit', (event) => {
     // Get Form Value
     const value = inputElement.value
         //Create a New Element
-        const feedbackElement = document.createElement('p')
-        feedbackElement.innerHTML = "You should watch" + name + "directed by" + director 
+        const feedbackElement = document.createElement('p');
+        const randomMovie = moviesArray[randomIndex];
+        const director = randomMovie.director;
+        const name = randomMovie.name;
+        feedbackElement.innerHTML = "You should watch " + name + " directed by " + director;
         //Add to Page
         inputFeedbackElement.appendChild(feedbackElement)
         //Clear Input
